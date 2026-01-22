@@ -1,6 +1,6 @@
 /* Body & Background */
 body {
-    background: linear-gradient(to right, #77ddef, #b18bd9, #84b3c7); 
+    background: black; 
     margin: 0;
     height: 135vh;
     font-family: 'Times New Roman', Times, serif;
@@ -59,7 +59,7 @@ body {
 
 .feature-card {
     padding: 20px;
-    background: linear-gradient(to right, #a76787, #8663ab, #608899);
+    background: rgb(0, 207, 222);
     border-radius: 40px;
     transition: transform 0.3s ease;
 }
@@ -67,7 +67,7 @@ body {
 .feature-card h3 {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(187, 241, 255);
+    color: rgb(34, 84, 97);
 }
 
 .feature-card p {
