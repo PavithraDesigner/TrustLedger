@@ -1,0 +1,250 @@
+/* Container */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Email & OTP inputs */
+.container .email input,
+.container .email.verify input {
+    width: 100%;
+    padding: 12px 4px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+/* OTP verify input container */
+.container .email.verify {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Buttons */
+.btn-send-otp,
+.container .email.verify button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7e5f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-send-otp:hover,
+.container .email.verify button:hover {
+    background: #0f1b9e;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px 5px;
+        padding: 20px;
+        width:300px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container .email input,
+    .container .email.verify input {
+        font-size: 14px;
+     
+         padding: 12px 4px;
+    }
+
+    .btn-send-otp,
+    .container .email.verify button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* Auth Box Container */
+.auth-box {
+    max-width: 450px;
+    margin: 50px auto;
+    
+    padding: 30px;
+    border-radius: 25px;
+   
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.auth-box h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Switch Buttons Container */
+.auth-switch {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Switch Buttons */
+.auth-switch button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #ff7e5f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-switch button:hover {
+    background: #eb5757;
+    transform: translateY(-2px);
+}
+
+/* Ensure child forms fit */
+.auth-box form,
+.auth-box .container {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .auth-box {
+        margin: 30px 15px;
+        padding: 60px;
+    }
+
+    .auth-box h2 {
+        font-size: 22px;
+    }
+
+    .auth-switch button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* Container */
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Form */
+.register-form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.register-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+.register-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.register-form input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+.register-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ff7e5f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background: #eb5757;
+  transform: translateY(-2px);
+}
+
+/* Webcam */
+.webcam-container {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.webcam {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .register-form, .webcam-container {
+    max-width: 90%;
+  }
+}

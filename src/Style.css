@@ -1,0 +1,207 @@
+/* Body & Background */
+body {
+    background: linear-gradient(to right, #77ddef, #b18bd9, #84b3c7); 
+    margin: 0;
+    height: 135vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title p {
+    color: white;
+    display: block;
+    margin-top: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 3px 5px 10px rgb(0, 155, 211);
+}
+
+#para {
+    margin-left: 600px;
+    color: white;
+}
+
+/* Main Content Container */
+#container {
+    display: flex;
+    height: 200px;
+    padding: 10px;
+}
+
+#left p {
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+/* Features Section */
+.features-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.features-title {
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(330px, 2fr));
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 20px;
+    background: linear-gradient(to right, #a76787, #8663ab, #608899);
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(187, 241, 255);
+}
+
+.feature-card p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.feature-icon {
+    font-size: 40px;
+}
+
+/* Shake Animation */
+.feature-card:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    min-height: 70vh;
+    
+}
+
+/* Login Form */
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+/* Webcam */
+.webcam-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.webcam {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #para {
+        margin-left: 20px;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-form, .webcam-container {
+        max-width: 90%;
+    }
+
+    #title p {
+        font-size: large;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
